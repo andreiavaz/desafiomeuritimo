@@ -22,12 +22,13 @@ export const Logo: React.FC<LogoProps> = ({
         src={IMAGES.officialLogo}
         onError={(e) => {
           const target = e.currentTarget;
-          if (target.src !== IMAGES.officialLogoUrl) {
+          if (!target.src.includes('/images/logo_desafio_meu_ritmo')) {
+            target.src = '/images/logo_desafio_meu_ritmo_transparent.png';
+          } else if (target.src !== IMAGES.officialLogoUrl) {
             target.src = IMAGES.officialLogoUrl;
           }
         }}
         alt="Logo Oficial Desafio Meu Ritmo"
-        referrerPolicy="no-referrer"
         className={`${sizeClasses[size]} object-contain`}
       />
     </div>

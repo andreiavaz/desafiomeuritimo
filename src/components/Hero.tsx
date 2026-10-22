@@ -99,8 +99,13 @@ export const Hero: React.FC = () => {
               <div className="rounded-xl overflow-hidden shadow-lg border border-[#DDD3C3] bg-[#F2EDE5]">
                 <img
                   src={IMAGES.heroTransformation}
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (!target.src.includes('/images/mulher_emagrecendo_leveza')) {
+                      target.src = '/images/mulher_emagrecendo_leveza_1792677474441.jpg';
+                    }
+                  }}
                   alt="Mulher vivenciando emagrecimento consciente com leveza e constância"
-                  referrerPolicy="no-referrer"
                   className="w-full aspect-[4/4.2] object-cover object-center"
                 />
                 <div className="p-3.5 bg-[#FAF7F2] border-t border-[#EAE2D5] text-center">

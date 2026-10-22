@@ -31,8 +31,13 @@ export const DeliverablesMockup: React.FC = () => {
         <div className="rounded-xl overflow-hidden border border-[#DCD0BE] shadow-md bg-[#F2ECE1] mb-8">
           <img
             src={IMAGES.mockupMateriais}
+            onError={(e) => {
+              const target = e.currentTarget;
+              if (!target.src.includes('/images/mockup_materiais_ritmo')) {
+                target.src = '/images/mockup_materiais_ritmo_1792676982432.jpg';
+              }
+            }}
             alt="Mockup do Checklist, Livro de Receitas e Grupo do Desafio Meu Ritmo"
-            referrerPolicy="no-referrer"
             className="w-full aspect-[16/9] object-cover"
           />
         </div>
