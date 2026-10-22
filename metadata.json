@@ -1,0 +1,6 @@
+{
+  "name": "Desafio Meu Ritmo",
+  "description": "Página de vendas oficial do Desafio Meu Ritmo com a Nutricionista Andréia Vaz. 7 dias guiados ao vivo para aprender a emagrecer e manter sem precisar fazer tudo perfeito.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
