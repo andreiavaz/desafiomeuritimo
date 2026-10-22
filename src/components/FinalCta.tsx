@@ -57,6 +57,8 @@ export const FinalCta: React.FC = () => {
           <div>
             <a
               href={CHECKOUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm sm:text-base font-semibold tracking-wide uppercase text-[#FAF7F2] bg-[#193427] hover:bg-[#234233] active:bg-[#12251C] transition-all rounded shadow-md text-center"
             >
               <span>Quero Participar do Meu Ritmo</span>

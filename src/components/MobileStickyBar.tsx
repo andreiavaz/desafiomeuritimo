@@ -34,6 +34,8 @@ export const MobileStickyBar: React.FC = () => {
 
         <a
           href={CHECKOUT_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 text-xs font-semibold tracking-wide uppercase text-[#FAF7F2] bg-[#193427] active:bg-[#12251C] rounded shadow whitespace-nowrap"
         >
           <span>Quero Participar</span>

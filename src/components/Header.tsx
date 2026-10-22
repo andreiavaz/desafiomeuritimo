@@ -18,6 +18,8 @@ export const Header: React.FC = () => {
           </span>
           <a
             href={CHECKOUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-[13px] font-semibold tracking-wide uppercase text-[#FAF7F2] bg-[#193427] hover:bg-[#234233] active:bg-[#12251C] transition-all rounded shadow-xs whitespace-nowrap"
           >
             Quero Participar
